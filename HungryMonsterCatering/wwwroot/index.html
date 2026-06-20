@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hungry Monster — Catering Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar__brand">
+      <span class="topbar__mark">🦖</span>
+      <div>
+        <h1 class="topbar__title">Hungry Monster</h1>
+        <p class="topbar__subtitle">Catering Ledger</p>
+      </div>
+    </div>
+    <p class="topbar__tagline">Track who ate, every year, since day one.</p>
+  </header>
+
+  <nav class="stepper" aria-label="Sections">
+    <button class="stepper__step is-active" data-tab="partners">
+      <span class="stepper__num">1</span> Partners
+    </button>
+    <button class="stepper__step" data-tab="entry">
+      <span class="stepper__num">2</span> Yearly entry
+    </button>
+    <button class="stepper__step" data-tab="ledger">
+      <span class="stepper__num">3</span> Ledger
+    </button>
+    <button class="stepper__step" data-tab="verdict">
+      <span class="stepper__num">4</span> Verdict
+    </button>
+  </nav>
+
+  <main class="content">
+
+    <!-- TAB 1: PARTNERS -->
+    <section class="panel is-active" id="tab-partners">
+      <div class="card">
+        <h2 class="card__title">Business partners</h2>
+        <p class="card__hint">Register every contractor whose employees you serve lunch to. You'll enter their yearly meal counts in the next step.</p>
+
+        <form id="form-add-partner" class="row">
+          <input type="text" id="input-partner-name" placeholder="e.g. Nordic Logistics" autocomplete="off" required />
+          <button type="submit" class="btn btn--primary">Add partner</button>
+        </form>
+
+        <p class="form-message" id="partner-message" role="status"></p>
+
+        <div class="chips" id="partner-chips" aria-live="polite">
+          <p class="empty-note" id="partner-empty-note">No partners yet — add your first one above.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: YEARLY ENTRY -->
+    <section class="panel" id="tab-entry">
+      <div class="card">
+        <h2 class="card__title">Enter meal data for a year</h2>
+        <p class="card__hint">Leave a partner at <strong>0</strong> if Hungry Monster did not work with them that year.</p>
+
+        <div id="entry-no-partners" class="empty-note">
+          Add at least one business partner in step 1 before entering yearly data.
+        </div>
+
+        <form id="form-entry" class="entry-form" style="display:none;">
+          <label class="field">
+            <span class="field__label">Year</span>
+            <input type="number" id="input-year" min="2000" max="2100" placeholder="2023" required />
+          </label>
+
+          <div class="entry-grid" id="entry-grid"><!-- generated per partner --></div>
+
+          <button type="submit" class="btn btn--primary">Save year data</button>
+          <p class="form-message" id="entry-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- TAB 3: LEDGER -->
+    <section class="panel" id="tab-ledger">
+      <div class="card card--wide">
+        <h2 class="card__title">Full ledger</h2>
+        <p class="card__hint">Every year recorded so far, meals per partner, and how many partners were active that year.</p>
+
+        <div id="ledger-empty" class="empty-note">No data entered yet.</div>
+
+        <div class="table-wrap">
+          <table id="ledger-table" style="display:none;">
+            <thead><tr id="ledger-head"></tr></thead>
+            <tbody id="ledger-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: VERDICT -->
+    <section class="panel" id="tab-verdict">
+      <div class="card card--center">
+        <h2 class="card__title">Which year had the most active partners?</h2>
+        <p class="card__hint">Runs the analysis across every recorded year and finds the one (or ones) where the highest number of distinct partners ordered at least one meal.</p>
+
+        <button class="btn btn--accent" id="btn-run-analysis">Run analysis</button>
+
+        <div id="verdict-empty" class="empty-note">No data to analyze yet.</div>
+
+        <div id="verdict-result" class="stamp-wrap" style="display:none;">
+          <div class="stamp">
+            <span class="stamp__label">Busiest year</span>
+            <span class="stamp__year" id="stamp-year">—</span>
+            <span class="stamp__detail" id="stamp-detail">— active partners</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    Hungry Monster Catering Ledger — All rights reserved by Fariz Aslan since 2026.
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

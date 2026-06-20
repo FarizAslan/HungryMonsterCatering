@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "/home/fariz/Documents/HungryMonsterCatering/wwwroot/css/styles.css",
+      "PackagePath": "staticwebassets/css/styles.css"
+    },
+    {
+      "Id": "/home/fariz/Documents/HungryMonsterCatering/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/home/fariz/Documents/HungryMonsterCatering/wwwroot/js/app.js",
+      "PackagePath": "staticwebassets/js/app.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.HungryMonsterCatering.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.HungryMonsterCatering.props",
+      "PackagePath": "build\\HungryMonsterCatering.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.HungryMonsterCatering.props",
+      "PackagePath": "buildMultiTargeting\\HungryMonsterCatering.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.HungryMonsterCatering.props",
+      "PackagePath": "buildTransitive\\HungryMonsterCatering.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

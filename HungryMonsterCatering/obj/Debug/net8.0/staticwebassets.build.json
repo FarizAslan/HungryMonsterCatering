@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "ieS3PfiLSK/hzXDpvmtbaI6KqcbUAkczekvhHY1PFxg=",
+  "Source": "HungryMonsterCatering",
+  "BasePath": "_content/HungryMonsterCatering",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "HungryMonsterCatering/wwwroot",
+      "Source": "HungryMonsterCatering",
+      "ContentRoot": "/home/fariz/Documents/HungryMonsterCatering/wwwroot/",
+      "BasePath": "_content/HungryMonsterCatering",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/fariz/Documents/HungryMonsterCatering/wwwroot/css/styles.css",
+      "SourceId": "HungryMonsterCatering",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/fariz/Documents/HungryMonsterCatering/wwwroot/",
+      "BasePath": "_content/HungryMonsterCatering",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/styles.css"
+    },
+    {
+      "Identity": "/home/fariz/Documents/HungryMonsterCatering/wwwroot/index.html",
+      "SourceId": "HungryMonsterCatering",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/fariz/Documents/HungryMonsterCatering/wwwroot/",
+      "BasePath": "_content/HungryMonsterCatering",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/home/fariz/Documents/HungryMonsterCatering/wwwroot/js/app.js",
+      "SourceId": "HungryMonsterCatering",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/fariz/Documents/HungryMonsterCatering/wwwroot/",
+      "BasePath": "_content/HungryMonsterCatering",
+      "RelativePath": "js/app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/app.js"
+    }
+  ]
+}
